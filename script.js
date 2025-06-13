@@ -257,3 +257,15 @@ addSymbolicBtn.addEventListener('click', function () {
     ns2.value = '';
     newSymbolic.focus();
 });
+
+/* ── 6-1. 학번·이름·git.io 주소 ───────────────── */
+var footer = document.createElement('p');
+footer.textContent = '20243074 조현우 ' 
+
+var link = document.createElement('a');
+link.href = 'https://blackest21.github.io/deduction/';   // ← 실제 git.io 단축 URL
+link.target = '_blank';             // 새 탭에서 열고 싶다면
+link.textContent = 'https://blackest21.github.io/deduction/';    // 링크에 보일 글자
+
+footer.appendChild(link);
+body.appendChild(footer);
